@@ -1,11 +1,61 @@
 .picpay {
-    &:hover {
-        cursor: pointer;
+  background: linear-gradient(180deg, #21c25e, #1ce267);
+  width: 400px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  height: 100vh;
+  min-height: 900px;
+
+  .box-all {
+    padding: 15px;
+    border: 1px solid #21c25e;
+    border-radius: 15px 15px 15px 15px;
+    background: #fff;
+
+    .box-picpay {
+      width: 400px;
+      margin: 0 auto;
+      padding: 15px;
+      box-sizing: border-box;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      
+      .description {
+        // width: 80%;
+        line-height: 180%;
+        display: block;
+        margin: 0 auto;
+        
+        h3 {
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
+  }
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
+@media only screen and (max-width: 600px) {
+  .picpay {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 0px 20px;
+  }
+
+  .box-all {
+
+    .box-picpay {
+      width: 100%;
+      margin: 0 auto;
+      padding: 15px;
+    }
+  }
 }
