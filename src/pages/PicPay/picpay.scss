@@ -1,0 +1,11 @@
+.picpay {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "front-hotsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/firestore": "^3.4.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.7.0",
+    "http2": "^3.3.7",
+    "moment-timezone": "^0.5.27",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.10.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
+    "react-input-mask": "^2.0.4",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "react-slick": "^0.25.2",
+    "reactstrap": "^8.4.0",
+    "uuidv4": "^6.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && firebase deploy --only hosting"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
