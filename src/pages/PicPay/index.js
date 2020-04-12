@@ -17,14 +17,21 @@ class PicPayPage extends Component {
     render() {
         return (
             <>
-                <Container className="picpay">
-                    <div className="box-all">
+                <Container className="container-picpay">
+                    {/* <div className="box-all">
                         <div className="box-picpay">
-                            <img onClick={() => window.open('https://picpay.me/veiguiz')} className="rounded" src={picpay} alt="Apoie o meu trabalho, doando qualquer quantia acima de R$ 0,05" />
+                            <img  className="rounded" src={picpay} alt="Apoie o meu trabalho, doando qualquer quantia acima de R$ 0,05" />
                             <div className="description p-3 bg-light rounded text-dark p-2 mt-2 text-center">
                                 <h5>Qualquer quantia me ajuda! 💚</h5>
                                 <p className='m-0 p-0'>Abra o PicPay em seu telefone e escaneie o código acima para ajudar a comunidade.</p>
                             </div>
+                        </div>
+                    </div> */}
+                    <div class="box-all">
+                        <h1>Veiguiz</h1>
+                        <div class="box-picpay">
+                            <img onClick={() => window.open('https://picpay.me/veiguiz')} src="https://veiguiz.web.app/static/media/picpay_qrcode.b8b0212c.PNG" class="img" />
+                            <p class="copy-table"><span class="large">Qualquer quantia me ajuda! 💚</span>Abra o PicPay em seu telefone e escaneie o código acima para ajudar a comunidade.</p>
                         </div>
                     </div>
                 </Container>

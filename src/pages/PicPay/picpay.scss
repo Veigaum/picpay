@@ -1,60 +1,69 @@
-.picpay {
-  width: 400px;
+.container-picpay {
+  max-width: 500px;
+  height: 100vh;
+  min-height: 900px;
   display: flex;
   align-items: center;
   vertical-align: middle;
-  height: 100vh;
-  min-height: 900px;
-
-  .box-all {
-    padding: 15px;
-    border: 1px solid #21c25e;
-    border-radius: 15px 15px 15px 15px;
-    background: #fff;
-
-    .box-picpay {
-      width: 400px;
-      margin: 0 auto;
-      padding: 15px;
-      box-sizing: border-box;
-
-      img {
-        display: block;
-        margin: 0 auto;
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      
-      .description {
-        // width: 80%;
-        line-height: 180%;
-        display: block;
-        margin: 0 auto;
-        
-        h3 {
-          display: block;
-          margin: 0 auto;
-        }
-      }
-    }
-  }
+  margin: 0 auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .picpay {
-    width: 100%;
-    box-sizing: border-box;
-    min-height: 100vh;
-    padding: 0px 20px;
-  }
+.box-all {
+  padding: var(--padding-box);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background: white;
+  border-radius: 15px;
+}
 
-  .box-all {
+.box-all>h1 {
+  font-size: 25px;
+  display: block;
+  color: var(--color-7);
+  text-align: center;
+  padding: 10px 5px;
+  width: 135px;
+  margin: 0 auto;
+  color: white;
+  background: linear-gradient(180deg, #21c25e, #1ce267);
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 10px;
+}
 
-    .box-picpay {
-      width: 100%;
-      margin: 0 auto;
-      padding: 15px;
-    }
+.box-picpay {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--padding-box);
+  box-sizing: border-box;
+}
+
+.img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copy-table {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  line-height: 180%;
+  background: #f8f9fa;
+  border-radius: 5px;
+  color: #343a40;
+  text-align: center;
+}
+
+span.large {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 411px) {
+  .container-picpay {
+    min-height: 90vh;
   }
 }
