@@ -4,6 +4,8 @@ import {
   Container
 } from "reactstrap"
 
+import './index.scss'
+
 // Components
 import PicPayPage from './pages/PicPay'
 
@@ -11,7 +13,9 @@ class MainController extends Component {
   render() {
     return (
       <Router>
-        <Route exact path="/" component={PicPayPage} />
+        <Container fluid id="main">
+          <Route exact path="/" component={PicPayPage} />
+        </Container>
       </Router>
     )
   }
