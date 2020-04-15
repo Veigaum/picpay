@@ -40,4 +40,5 @@ class PicPayPage extends Component {
     }
 }
 
+
 export default PicPayPage
